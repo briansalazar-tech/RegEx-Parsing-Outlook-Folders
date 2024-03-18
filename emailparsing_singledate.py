@@ -73,7 +73,7 @@ for item in foldername.Items:
         
         ### CREATE AND SAVE TO CSV ###
         # Save location for csv - Creates a file if it does not exist and appends each match to the file.
-        csv_report_file = open(f"{SAVE_DIRECTORY}FILENAME-{datetime.date.today()}.csv", mode = "a", newline = "")
+        csv_report_file = open(f"{SAVE_DIRECTORY}FILENAME.csv", mode = "a", newline = "")
         csv_writer = csv.writer(csv_report_file, delimiter = ",")
         csv_writer.writerow([
                 subject, # Column A
